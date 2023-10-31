@@ -132,7 +132,7 @@
   <!-- - End: Section 2 -->
 
   <!-- - Start: Section 3 -->
-  <div class="row g-0 my-5">
+  <div class="row g-0 my-5" id="interior">
     <div class="col-md-6">
       <section class="h-100 d-flex flex-column justify-content-center align-items-center gap-3"
         style="margin-left:250px">
@@ -157,7 +157,7 @@
   <!-- - End: Section 3 -->
 
   <!-- - Start: Section 4 -->
-  <div class="row g-0">
+  <div class="row g-0" id="inner">
     <div class="col-md-12">
       <article class="position-relative" style="height: 700px">
         <section class="figure-hover position-absolute top-0 start-0 end-0 bottom-0
@@ -172,7 +172,7 @@
           </a>
         </section>
         <figure class="overflow-hidden position-absolute top-0 start-0 end-0 bottom-0">
-          <div class="figure" style="background: url('{{ asset('images/section4.jpg') }}') center / cover no-repeat">
+          <div class="figure sec4">
           </div>
         </figure>
       </article>
@@ -189,7 +189,7 @@
       <section>
         <h6 class="product__title mont border-bottom pb-2">
           <b class="text-uppercase text-body">Sản phẩm mới</b>
-          <a class="text-decoration-none text-body ms-4" href="#">
+          <a class="text-decoration-none text-body ms-4" href="{{ route('products') }}">
             xem tất cả <i class="text-body-secondary fa-solid fa-chevron-right"></i>
           </a>
         </h6>
@@ -208,6 +208,9 @@
         </div>
         <div class="product__body">
           <a href="#" class="product__name text-decoration-none text-normal text-body">{{ $each->name }}</a>
+        </div>
+        <div class="product__footer mt-3">
+          <button class="btn btn-outline-dark text-uppercase rounded-0">Xem thêm</button>
         </div>
       </section>
     </div>
@@ -229,7 +232,7 @@
           </a>
         </section>
         <figure class="overflow-hidden position-absolute top-0 start-0 end-0 bottom-0">
-          <div class="figure" style="background: url('{{ asset('images/section5.jpg') }}') center / cover no-repeat">
+          <div class="figure sec5">
           </div>
         </figure>
       </article>
@@ -239,7 +242,7 @@
 <!-- - End: New Collection -->
 
 <!-- - Start: Inspiration -->
-<div class="container">
+<div class="container" id="inspiration">
   <div class="row">
     <div class="col-md-12">
       <h1 class="mt-5 display-6 fw-bold text-center mont">Góc cảm hứng</h1>

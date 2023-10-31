@@ -16,4 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index']);
-// Route::get('/', [ProductController::class, 'index']);
+Route::get('/san-pham', [ProductController::class, 'index'])->name('products');

@@ -25,7 +25,7 @@
 
 <body>
   <header>
-    @include('layouts.header');
+    @include('layouts.header')
   </header>
 
   <main>
@@ -33,7 +33,7 @@
   </main>
 
   <footer style="background-color: #303036 !important;" class="py-5">
-    @include('layouts.footer');
+    @include('layouts.footer')
   </footer>
 
   <script src="{{ asset('js/app.js')}}"></script>

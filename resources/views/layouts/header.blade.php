@@ -264,25 +264,123 @@
                 <a class="nav__link" href="#">Bộ sưu tập</a>
               </li>
               <li class="position-relative">
-                <a class="nav__link" href="#">Thiết kế nội thất</a>
+                <a class="nav__link" href="#interior">Thiết kế nội thất</a>
               </li>
               <li class="position-relative">
-                <a class="nav__link" href="#">Cửa hàng 360 độ</a>
+                <a class="nav__link" href="#inner">Cửa hàng 360 độ</a>
               </li>
               <li class="position-relative">
-                <a class="nav__link" href="#">Góc cảm hứng</a>
+                <a class="nav__link" href="#inspiration">Góc cảm hứng</a>
               </li>
             </ul>
           </nav>
           <!-- - End: Header navigation bar -->
           <!-- - Start: Header right -->
           <div class="d-flex justify-content-center align-items-center">
-            <form action="" class=" d-flex justify-content-center align-items-center">
-              <div class="header__search d-flex justify-content-center align-items-center">
-                <input type="text" name="header__search" placeholder="Tìm sản phẩm">
-                <i class="fa-solid fa-search"></i>
+            <button class="btn"><i class="fa-solid fa-search"></i></button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#userModal">
+              <i class="fa-solid fa-user"></i>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header border-bottom-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h1 class="fs-4 text-center mb-4" id="userModalLabel" style="margin-top: -48px;">Sign In</h1>
+                    <form>
+                      <div class="form-floating mb-3">
+                        <input name="email" type="email" class="form-control" id="floatingInput"
+                          placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input name="password" type="password" class="form-control" id="floatingPassword"
+                          placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                      </div>
+                      <div class="form-group mb-3 text-center">
+                        <a href="#" class="text-primary text-decoration-none">Forgot password?</a>
+                      </div>
+                      <div class="form-group mb-3">
+                        <button type="submit" class="btn btn-lg btn-primary w-100">Sign in</button>
+                      </div>
+                    </form>
+                    <div class="d-flex align-items-center justify-content-center">
+                      <span>Don't have an account?</span>
+                      <button class="btn ms-2 p-0 text-primary" data-bs-target="#signUpModal"
+                        data-bs-toggle="modal">Signup</button>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="d-flex w-100 justify-content-center align-items-center flex-column gap-3">
+                      <button type="button" class="btn w-100 text-center text-white" style="background: #4267b2">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>Facebook</span>
+                      </button>
+                      <button type="button" class="btn w-100 text-center text-white" style="background: #d32f2e">
+                        <i class="fa-brands fa-google"></i>
+                        <span>Google</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </form>
+            </div>
+
+            <div class="modal fade" id="signUpModal" aria-hidden="true" aria-labelledby="signUpModal" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header border-bottom-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h1 class="fs-4 text-center mb-4" id="userModalLabel" style="margin-top: -48px;">Sign Up</h1>
+                    <form>
+                      <div class="form-floating mb-3">
+                        <input name="email" type="email" class="form-control" id="floatingInput"
+                          placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input name="password" type="password" class="form-control" id="floatingPassword"
+                          placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input name="confirm_password" type="password" class="form-control"
+                          id="floating_ConfirmPassword" placeholder="Confirm password">
+                        <label for="floating_ConfirmPassword">Confirm password</label>
+                      </div>
+                      <div class="form-group mb-3">
+                        <button type="submit" class="btn btn-lg btn-primary w-100">Sign up</button>
+                      </div>
+                    </form>
+                    <div class="d-flex align-items-center justify-content-center">
+                      <span>Already have an account?</span>
+                      <button class="btn ms-2 p-0 text-primary" data-bs-toggle="modal"
+                        data-bs-target="#userModal">Login</button>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="d-flex w-100 justify-content-center align-items-center flex-column gap-3">
+                      <button type="button" class="btn w-100 text-center text-white" style="background: #4267b2">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>Facebook</span>
+                      </button>
+                      <button type="button" class="btn w-100 text-center text-white" style="background: #d32f2e">
+                        <i class="fa-brands fa-google"></i>
+                        <span>Google</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- - End: Header right -->
         </div>
