@@ -1,8 +1,8 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12" id="js-header">
       <header class="d-flex justify-content-center align-items-center" style="border-bottom: 1px solid #eee">
-        <div class="header__wrapped w-100 d-flex justify-content-between pt-2 pb-1 border-1">
+        <div class="header__wrapped w-100 d-flex justify-content-between py-2 border-1">
           <!-- - Start: Header left -->
           <div class="d-flex align-items-center gap-1">
             <div class="header__icon-wrapped">
@@ -277,7 +277,7 @@
           <!-- - End: Header navigation bar -->
           <!-- - Start: Header right -->
           <div class="d-flex justify-content-center align-items-center">
-            <button class="btn"><i class="fa-solid fa-search"></i></button>
+            <button class="btn" id="js-header-search"><i class="fa-solid fa-search"></i></button>
             <!-- Button trigger modal -->
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#userModal">
               <i class="fa-solid fa-user"></i>
@@ -314,18 +314,6 @@
                       <span>Don't have an account?</span>
                       <button class="btn ms-2 p-0 text-primary" data-bs-target="#signUpModal"
                         data-bs-toggle="modal">Signup</button>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <div class="d-flex w-100 justify-content-center align-items-center flex-column gap-3">
-                      <button type="button" class="btn w-100 text-center text-white" style="background: #4267b2">
-                        <i class="fa-brands fa-facebook"></i>
-                        <span>Facebook</span>
-                      </button>
-                      <button type="button" class="btn w-100 text-center text-white" style="background: #d32f2e">
-                        <i class="fa-brands fa-google"></i>
-                        <span>Google</span>
-                      </button>
                     </div>
                   </div>
                 </div>
@@ -366,18 +354,6 @@
                         data-bs-target="#userModal">Login</button>
                     </div>
                   </div>
-                  <div class="modal-footer">
-                    <div class="d-flex w-100 justify-content-center align-items-center flex-column gap-3">
-                      <button type="button" class="btn w-100 text-center text-white" style="background: #4267b2">
-                        <i class="fa-brands fa-facebook"></i>
-                        <span>Facebook</span>
-                      </button>
-                      <button type="button" class="btn w-100 text-center text-white" style="background: #d32f2e">
-                        <i class="fa-brands fa-google"></i>
-                        <span>Google</span>
-                      </button>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -385,6 +361,18 @@
           <!-- - End: Header right -->
         </div>
       </header>
+    </div>
+    <div class="col-md-12" id="js-search">
+      <div class="d-flex justify-content-between align-items-center gap-3 py-2">
+        <div class="d-flex w-100">
+          <input class="search__input form-control form-control-lg border-secondary-subtle rounded-0 shadow-none"
+            type="text" placeholder="Tìm kiếm theo từ khóa">
+          <button class="btn btn-lg btn-dark rounded-0">
+            <i class="fa-solid fa-search"></i>
+          </button>
+        </div>
+        <button type="button" class="btn-close text-dark" id="js-header-close" aria-label="Close"></button>
+      </div>
     </div>
   </div>
 </div>

@@ -182,7 +182,7 @@ body.hidden {
 	top: -40px;
 	left: 160px;
 
-	width: 80px;
+	width: 720px;
 	height: 40px;
 
 	background-color: transparent;
@@ -204,6 +204,20 @@ body.hidden {
 
 
 /* - Start: Header right */
+.search__input:focus {
+	border-color: #378694 !important;
+}
+#js-header#collapse{
+	display: none;
+}
+#js-search{
+	display: none;
+}
+#js-search.active{
+	display: block;
+}
+#js-header-close{
+}
 /* - End: Header right */
 
 /* - Start: Article */

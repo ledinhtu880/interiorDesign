@@ -35,10 +35,10 @@
     <div class="col-md-12">
       <!-- - Start: Search product -->
       <article class="my-2">
-        <form action="" class="d-flex justify-content-center align-items-center">
+        <form class="d-flex justify-content-center align-items-center">
           <input class="form-control form-control-lg shadow-sm rounded-0 ps-4 rounded-0" type="text"
             placeholder="Tìm sản phẩm" style="box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);">
-          <a href=" #" class="btn btn-dark rounded-0"><i class="fa-solid fa-search"></i></a>
+          <button type="submit" class="btn btn-dark btn-lg rounded-0"><i class="fa-solid fa-search"></i></button>
         </form>
       </article>
       <!-- - End: Search product -->
@@ -100,7 +100,7 @@
           <div class="section__design w-100 d-flex flex-column justify-content-between">
             <h6 class="section__design-title text-body m-0" style="max-width: 100px">Không gian phòng ngủ</h6>
             <p class="section__design-description text-body-emphasis my-1" style="max-width: 175px">
-              Những mẫu phòng ngủ của Nhà Xinh mang đến cảm giác ấm cúng, gần gũi và thoải mái
+              Những mẫu phòng ngủ của Nikken Sekkei mang đến cảm giác ấm cúng, gần gũi và thoải mái
             </p>
             <a class="section__design-link" href="#">Mẫu phòng ngủ<i class="fa-solid fa-arrow-right-long ms-2"></i></a>
           </div>
@@ -139,7 +139,7 @@
         <h6 class="section__design-title text-body fs-3 fw-bolder m-0 text-uppercase">Thiết kế nội thất</h6>
         <p class="section__design-description my-1 fs-5 fw-normal text-center" style="max-width:400px;">
           Với kinh nghiệm hơn 23 năm trong lĩnh vực thiết kế và hoàn thiện nội thất cùng đội ngũ thiết kế chuyên
-          nghiệp, Nhà Xinh mang đến giải pháp toàn diện trong nội thất.
+          nghiệp, Nikken Sekkei mang đến giải pháp toàn diện trong nội thất.
         </p>
         <div>
           <a href="#" class="section__btn section__btn--green text-decoration-none fw-bold fs-6">Xem thêm</a>
@@ -164,7 +164,7 @@
       d-flex flex-column justify-content-start align-items-center gap-3 z-3" style="padding-top: 100px;">
           <h6 class="section__text-color mont m-0 display-5 text-uppercase">Cửa hàng 360 độ</h6>
           <p class="section__text-color text-center" style="max-width: 750px">
-            Trải nghiệm ngay sản phẩm của Nhà Xinh một cách chân thực trên tay bạn. Tham quan, xem thông tin sản
+            Trải nghiệm ngay sản phẩm của Nikken Sekkei một cách chân thực trên tay bạn. Tham quan, xem thông tin sản
             phẩm chi tiết với góc nhìn 360 độ hoàn chỉnh.
           </p>
           <a href="#" class="section__btn section__btn--light text-uppercase fs-6 fw-bold text-decoration-none">
@@ -283,7 +283,8 @@
         <div class="introduce__wrapped">
           <h6 class="introduce__title fs-3 fw-normal mont"><strong>Tổ ấm của người tinh tế</strong></h6>
           <p class="introduce__description">Trong suốt hơn 22 năm qua, cảm hứng từ gu thẩm mỹ tinh tế và tinh thần
-            “Việt” đã giúp Nhà Xinh tạo ra những thiết kế độc đáo, hợp thời và chất lượng. Nhà Xinh hiện đã mở 10
+            “Việt” đã giúp Nikken Sekkei tạo ra những thiết kế độc đáo, hợp thời và chất lượng. Nikken Sekkei hiện đã mở
+            10
             cửa hàng tại Việt Nam.</p>
           <a href="#" class="introduce__button text-white text-decoration-none text-uppercase fw-bold fs-6">Về
             Nikken Sekkai</a>
@@ -327,10 +328,7 @@
                 <textarea name="content" id="content" cols="10" rows="2"
                   class="form-control form-control-lg shadow-sm rounded-0" placeholder="Nội dung liên hệ"></textarea>
               </div>
-              <div class="d-flex justify-content-between">
-                <div class="form-group">
-                  <input type="file" name="file" id="file">
-                </div>
+              <div class="d-flex justify-content-end">
                 <button type="submit" class="btn btn-dark rounded-0 text-uppercase fw-bold">Gửi yêu cầu</button>
               </div>
             </form>

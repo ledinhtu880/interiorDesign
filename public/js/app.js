@@ -6,6 +6,10 @@ const headerBtn = $(".js__header-btn");
 const dropdown = $(".dropdown");
 const dropdownClose = $(".dropdown__close");
 const dropdownWrapped = $(".overlay");
+const headerWrapped = $("#js-header");
+const headerSearchWrapped = $("#js-search");
+const headerSearchClose = $("#js-header-close");
+const headerSearchButton = $("#js-header-search");
 
 headerBtn.onclick = function () {
 	dropdownWrapped.style.display = "block";
@@ -30,6 +34,15 @@ dropdownWrapped.addEventListener("click", () => {
 		dropdownWrapped.style.display = "block";
 	}, 0);
 });
+
+headerSearchButton.onclick = function(){
+	headerWrapped.classList.add("collapse");
+	headerSearchWrapped.classList.add("active");
+}
+headerSearchClose.onclick = function(){
+	headerWrapped.classList.remove("collapse");
+	headerSearchWrapped.classList.remove("active");
+}
 
 dropdown.addEventListener("click", function (event) {
 	event.stopPropagation();
