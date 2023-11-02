@@ -216,8 +216,6 @@ body.hidden {
 #js-search.active{
 	display: block;
 }
-#js-header-close{
-}
 /* - End: Header right */
 
 /* - Start: Article */
@@ -356,7 +354,7 @@ figure img {
 	font-size: 10px;
 }
 .product__name {
-	font-size: 14px;
+	font-size: 13px;
 }
 .product {
 	border: var(--bs-border-width) var(--bs-border-style) transparent;
